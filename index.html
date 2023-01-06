@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thottiyam Rice</title>
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="index.css">
+<body>
+    <header class="miniContact"> 
+        <div class="wrap-inner">
+            <div class="header-info">
+                <div class="mail hchild">
+                    <a href="mailto:mail@gmail.com" target="_blank">mail@gmail.com</a>
+                </div>
+                <div class="contact hchild">
+                    <a href="tel:+91-902-5006035" target="blank">+91-902-5006035</a>
+                </div>
+            </div> 
+        </div>
+        <div class="logo">
+            <div class="logo-inner">
+                <img src="rice-logo.png" alt="logo">
+            </div>
+        </div>
+        <div class="social-media">
+            <div class="sinner">
+                <div class="watsapp schild">
+                    <div class="slogo">
+                        <img src="whatsapp.png" alt="watsapp">
+                    </div>
+                </div>
+                <div class="instagram schild">
+                    <div class="slogo">
+                        <img src="instagram.png" alt="instagram">
+                    </div>
+                </div>
+
+                <div class="youtube schild">
+                    <div class="slogo">
+                        <img src="youtube.png" alt="youtube">
+                    </div>
+                </div>            
+            </div>
+        </div>
+    </header>
+    <nav>
+        <div class="topnav" id="myTopnav">
+            <a href="#home" class="active">Home</a>
+            <a href="#news">About</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">Rice</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+            <button class="button" style="vertical-align:middle"><span>Shop Now </span></button>
+        </div>
+    </nav>
+</body>
+<script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+</script>
+</html>
