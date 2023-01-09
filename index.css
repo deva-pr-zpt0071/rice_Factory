@@ -1,108 +1,59 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Segoe UI", Arial, sans-serif;
   box-sizing: border-box; 
-}
-div a{
-  font-size: 20px;
-}
+} 
 
-.topnav {
-  overflow: hidden;
-  background-color: #333; 
-  align-items: center;
-}
-.topnav button{
-  margin-top: 10px;
-}
-.topnav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 21px 16px;
-  text-decoration: none;
-  font-size: 20px;
-  width: 17%; 
-}
-
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-.topnav a.active {
-  background-color: #04AA6D;
-  color: white;
-}
-
-.topnav .icon {
-  display: none;
-}
-
-@media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {display: none;}
-  .topnav a.icon {
-    float: right;
-    display: block;
-  } 
-}
-
-@media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
-  .topnav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-}
 .miniContact{
     width : 100%;
     display: flex;
     flex-wrap: wrap;
     /* background-color: red; */
-    align-items: center;    
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;     
 }
 .wrap-inner{
-    width: 40%;   
+    width: 30%;    
 }
 .header-info{
     width: 100%;
     display: flex;
     flex-wrap: wrap; 
     justify-content: space-around;
-    align-items: center;
-    /* background-color: blue;  */
+    align-items: center; 
+    text-align: center; 
+}
+#icon{
+  width: 20px;
+  height: auto;  
+  line-height: 30px;
+  vertical-align: middle;
+  padding-right: 10px;
 }
 .hchild{ 
     text-align: center; 
 }
 .hchild a{
     text-decoration: none;
-    color: green;
+    color: rgb(88, 87, 87);
+    line-height: 30px;
 }
-.logo{
-    width: 20%; 
-} 
-.logo-inner{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+.logo{   
+    display: block;  
+    margin-top: 5px;
+    margin-left: 5px;
+}  
 .logo img{
-    width: 100px;
-    height: 80px;
+    width: 60px;
+    float: left;
+    height: 60px;
 }
+
+
+
 .social-media{
-    width: 40%;
-    /* background-color: black; */
+    width: 20%; 
 }
 .sinner{
     width: 100%;
@@ -128,24 +79,91 @@ div a{
     align-items: center;
 }
 .slogo img{
-    width: 30px;
-    height: 30px;
+    width: 27px;
+    height: auto;
 }
+
+
+.navicon{
+  display: none;
+  width: 10%;
+  height: auto;
+  position: fixed; 
+  right: 0;
+  top: 25px;
+}
+.sidenav{ 
+  width: 42%; 
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+}
+.sidenav a{
+  padding: 8px 8px 8px 19px;
+  text-decoration: none;
+  font-size: 19px;
+  color: rgb(88, 87, 87);
+  display: flex;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #ffcccc;
+}
+.sidenav .closebtn{
+  display: none;
+}
+@media screen and (max-width: 1100px) { 
+  .miniContact{
+    justify-content: flex-start;
+  }
+  .social-media{
+    width: 30%;
+  }
+  .navicon{ 
+    display: block;
+    width: 15%;
+  } 
+  .sidenav {
+    display: block;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  
+  .sidenav .closebtn {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+}
+
+
 
 /* ---SHOP NOW BUTTON-- */
 .button { 
-  border-radius: 4px;
+  border-radius: 4px; 
   background-color: #f4511e;
   border: none;
   color: #FFFFFF;
   text-align: center;
   font-size: 18px;
-  padding: 12px 6px;
-  width: 150px;
+  padding: 6px 6px; 
   transition: all 0.5s;
   cursor: pointer; 
-  float: right;
-  margin-right: 10%;
+  float: right; 
+  margin-left: 10px;
 }
 
 .button span {
@@ -173,14 +191,24 @@ div a{
   right: 0;
 }
 @media screen and (max-width: 600px) { 
+  
   .wrap-inner{
-    width: 60%; 
+    width: 50%; 
   }
   .logo{
-    width: 40%;
+    width: 100%;  
+  }
+  .logo-inner{
+    justify-content:flex-start; 
+    margin-top: 5px;
+    margin-left: 5px;
+  }
+  .navicon{ 
+    display: block;
+    width: 15%;
   }
   .social-media{
-    width: 100%;
+    width: 50%; 
   }
   .button{ 
     font-size: 15px;
@@ -192,6 +220,22 @@ div a{
     margin-top: 17px;
     margin-bottom: 10px;
   }
+  #icon, .hchild a{
+    line-height: 30px;
+  }
+  #icon{
+    width: 20px;
+  }
+  .slogo{
+    width: 30px;
+  }
+  .slogo img{
+    width: 25px;
+    height: auto;
+  }
+  .button{
+    float: left;
+  }
 }
 
 
@@ -200,7 +244,15 @@ div a{
 
 /* image slider */
 .main{
-  width: 100%;    
+  width: 100%;   
+  height: auto;
+  margin-top: 10px;
+  background-color: rgb(235, 235, 235);
+}
+@media screen and (max-width: 600px) { 
+   .slideshow-container{
+    max-width: 500px;
+   }
 }
 
 .slideshow-container { 
@@ -214,8 +266,8 @@ div a{
 }
 
 .mySlides img {  
-  width: 100%;
-  height: 540px;  
+  width: 100%;   
+  height: auto;
 }
 
 
@@ -387,7 +439,7 @@ iframe{
 @media only screen and (max-width: 800px) {
   .ltext, .lframe{
    width: 95%;
-  }
+  }images
   .linnerframe{
     margin: 5%;
   }
