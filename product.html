@@ -5,13 +5,118 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Products</title>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="product.css">
+    <link rel="stylesheet" href="footer.css">
 </head>
-<body>
-    
-  <hr>
-  <div class="section">
+<body> 
 
-    <h1>Rice Varieties</h1>
+  <header class="miniContact">
+
+    <div class="logo">
+      <div class="logo-inner">
+        <img src="ss/logo.png" alt="logo">
+      </div>
+    </div>
+
+    <div class="wrap-inner">
+      <div class="header-info">
+        <div class="mail hchild">
+          <img src="envelope-solid.svg" id="icon" alt="mailicon">
+          <a href="mailto:ss.shalinitraders@gmail.com" target="_blank">ss.shalinitraders</a>
+        </div>
+        <div class="contact hchild">
+          <img src="phone-solid.svg" id="icon" alt="mailicon">
+          <a href="tel:+91-902-5006035" target="blank">+91-902-5006035</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="social-media">
+      <div class="sinner">
+        <div class="watsapp schild">
+          <div class="slogo">
+            <img src="whatsapp.png" alt="watsapp">
+          </div>
+        </div>
+        <div class="instagram schild">
+          <div class="slogo">
+            <img src="instagram.png" alt="instagram">
+          </div>
+        </div>
+
+        <div class="youtube schild">
+          <div class="slogo">
+            <img src="youtube.png" alt="youtube">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="/index.html">Home</a>
+      <a href="#">Services</a>
+      <a href="/product.html">Products</a>
+      <a href="#">Contact</a>
+      <button class="button" style="vertical-align:middle;"><span>Shop Now </span></button>
+    </div>
+
+    <div class="navicon">
+      <span style="font-size:30px;cursor:pointer;" onclick="openNav()">&#9776;</span>
+    </div>
+  </header>
+
+  <div class="main">
+    <div class="main-container">
+      <img src="rice2.jpg" alt="">
+      <div class="heading">
+        <h1>OUR PRODUCTS</h1>
+        <div class="heading-foot">
+          <img src="header.jpg" class="header1" alt="">
+          <img src="header.jpg" class="header2" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <section>
+    <div class="thumnail">
+      <div class="heading">
+        <h1>RICE CATEGORIES</h1>
+        <div class="heading-foot">
+          <img src="header.jpg" class="header1" alt="">
+          <img src="header.jpg" class="header2" alt="">
+        </div>
+      </div>
+      
+      <div class="thumnail-inner">
+        <div class="thumnail-pic">
+          <img src="ss/idly rice special.png" alt="">
+          <div class="desc">
+            <h1>IDLY RICE SPECIAL</h1>
+            <p>This is a special rice variety that can be used to improve performance.</p>
+            <input type="submit" value="Read more">
+          </div>
+        </div>
+
+        <div class="miniPoster">
+          <h1>mini poster</h1>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <div class="section">
+    <div class="heading">
+      <h1>RICE VARIETIES</h1>
+      <div class="heading-foot">
+        <img src="header.jpg" class="header1" alt="">
+        <img src="header.jpg" class="header2" alt="">
+      </div>
+    </div>
     <div class="rice-varieties">
       <div class="responsive">
         <div class="gallery">
@@ -106,61 +211,106 @@
         </div>
       </div>
     </div>
-  </div>
-  <br>
+  </div> 
+
+
+
+
+
+  <!-- foooter  -->
+
+  
+  <footer>
+    <div class="fcontainer">
+
+      <div class="heading">
+        <h1>WE ARE HERE</h1>
+        <div class="heading-foot">
+          <img src="header.jpg" class="header1" alt="">
+          <img src="header.jpg" class="header2" alt="">
+        </div>
+      </div>
+
+      <div class="location">
+
+        <div class="location1 card">
+          <h3>Corporate Office</h3>
+          <iframe id="iframe"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15666.75484641466!2d78.3361673!3d10.9868523!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8ae8e29b532b5f97!2sTHOTTIYAM%20SS%20TRADERS!5e0!3m2!1sen!2sin!4v1673536571735!5m2!1sen!2sin"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div class="container">
+            <div class="location-icon">
+              <img src="location-dot-solid.svg" id="icon" alt="locationicon">
+              <h4>Tiruchirapalli - Salem Main Rd, Thottiyam, Tamil Nadu 621215</h4>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="location2 card">
+          <h3>Thottiyam Branch</h3>
+          <iframe id="iframe"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15666.75484641466!2d78.3361673!3d10.9868523!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8ae8e29b532b5f97!2sTHOTTIYAM%20SS%20TRADERS!5e0!3m2!1sen!2sin!4v1673536571735!5m2!1sen!2sin"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div class="container">
+            <div class="location-icon">
+              <img src="location-dot-solid.svg" id="icon" alt="locationicon">
+              <h4>Tiruchirapalli - Salem Main Rd, Thottiyam, Tamil Nadu 621215</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="location3 card">
+          <h3>Karur Branch</h3>
+          <iframe id="iframe"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15666.75484641466!2d78.3361673!3d10.9868523!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8ae8e29b532b5f97!2sTHOTTIYAM%20SS%20TRADERS!5e0!3m2!1sen!2sin!4v1673536571735!5m2!1sen!2sin"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div class="container">
+            <div class="location-icon">
+              <img src="location-dot-solid.svg" id="icon" alt="locationicon">
+              <h4>Tiruchirapalli - Salem Main Rd, Thottiyam, Tamil Nadu 621215</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="enquire-container">
+        <div class="heading">
+          <h1>GET A FREE CASE EVALATION TODAY!</h1>
+          <div class="heading-foot">
+            <img src="header.jpg" class="header1" alt="">
+            <img src="header.jpg" class="header2" alt="">
+          </div>
+        </div>
+        <div class="inner-enq">
+          <h3>Available 24 hours a day</h3>
+          <input type="text" placeholder="Enter your Name">
+          <input type="email" placeholder="Enter a valid email address">
+          <textarea name="" placeholder="Enter the message you want to convey" id="" cols="30" rows="10"></textarea>
+          <input type="submit" value="Submit">
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+
 </body>
+<script>
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+  }
+
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft = "0";
+    document.body.style.backgroundColor = "white";
+  }
+</script>
 </html>
 
-
-
-
-/* rice variety */
-h1{
-  color : gray;
-  text-align: center;
-}
-.section{
-  padding: 0 20px;  
-}
-.rice-varieties{
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center; 
-}
-div.gallery {
-  border: 1px solid #ccc;
-}
-
-div.gallery:hover {
-  border: 1px solid #777;
-}
-
-div.gallery img {
-  width: 100%;
-  height: auto;
-}
-
-div.desc {
-  padding: 15px;
-  text-align: center;
-} 
-
-.responsive {
-  padding: 6px; 
-  width: 24.99999%;
-}
-
-@media only screen and (max-width: 700px) {
-  .responsive {
-    width: 49.99999%;
-    margin: 6px 0;
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  .responsive {
-    width: 100%;
-  }
-}
