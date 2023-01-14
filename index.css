@@ -367,7 +367,7 @@ body {
 section{
   width: 100%; 
   height: auto;
-  background-image: url("/about-us.jpg");
+  background-image: url("about-us.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -408,7 +408,7 @@ section{
 footer {
   width: 100%;
   height: auto;
-  background-image: url("/footer-bg.jpg");
+  background-image: url("footer-bg.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
