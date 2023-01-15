@@ -1,3 +1,6 @@
+
+body {font-family: Verdana, sans-serif;}
+
 .heading-foot {
   display: flex;
   justify-content: center;
@@ -92,15 +95,20 @@ section{
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: center;  
+}
+.thumnail-pic .thumnail-img{
+  width: 60%;
+  /* height: 500px; */
 }
 .thumnail-pic img{
-  width: 66%; 
+  width: 100%; 
   height: auto;  
   /* object-fit:  */
   /* object-position: 50% 50%; */
 }
 .thumnail-pic .desc{
+  /* display: none; */
   width: 30%;   
   display: flex;
   flex-wrap: wrap;  
@@ -122,12 +130,66 @@ section{
 }
 
 .thumnail-inner .miniPoster{
-  width:50%;
-  /* background-color: purple; */
+  width:50%;   
 }
+.thumnail-inner .miniPoster .miniPoster-inner {
+  width:100%;
+  display: none;  
+}
+.thumnail-inner .miniPoster img{
+  width: 96%;
+  height: auto;
+  border-radius: 20px;
+}
+
+
+
+.mySlides {display: none;}
+
+img {vertical-align: middle;}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 12px;
+  width: 12px; 
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: transparent; 
+}
+
+/* Fading animation */
+.fade {
+  /* animation-name: fade; */
+  animation-duration: 3s;
+}
+
+/* @keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+} */
+
+
+
+
 
 @media only screen and (max-width: 700px) {
   .thumnail-pic{
+    width: 100%;
+  }
+  .thumnail-pic .thumnail-img{
     width: 100%;
   }
   .thumnail-inner .miniPoster{
