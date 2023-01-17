@@ -1,5 +1,5 @@
 
-body {font-family: Verdana, sans-serif;}
+/* body {font-family: Verdana, sans-serif;} */
 
 .heading-foot {
   display: flex;
@@ -15,6 +15,8 @@ h1{
   width: 70px;
   text-align: center;
   height: auto;
+  background: rgb(255, 255, 255, 0.2);
+  border-radius: 30%;
   /* background: rgb(255, 255, 255); */
   /* border-radius:50%; */
 }
@@ -32,7 +34,7 @@ h1{
   width: 100%; 
 }
 .main-container{
-  width: 100%; 
+  width: 100%;
   position: relative;
 }
 .main-container img{
@@ -40,15 +42,14 @@ h1{
   height: auto;
   max-height: 700px; 
 }
-.main-container .heading{
-  width: 50%;
-  float: left; 
-  position: absolute; 
-  top: 33%; 
+.main-container .heading{  
+  position: absolute;   
+  top: 30%; 
+  left: 10%;
 }
 .main-container .heading h1{
   color: white;
-  font-size:40px; 
+  font-size:40px;   
 }
 @media only screen and (max-width: 617px) {
   .main-container .heading{
@@ -104,6 +105,7 @@ section{
 .thumnail-pic img{
   width: 100%; 
   height: auto;  
+  border-radius: 5px;
   /* object-fit:  */
   /* object-position: 50% 50%; */
 }
@@ -138,8 +140,7 @@ section{
 }
 .thumnail-inner .miniPoster img{
   width: 96%;
-  height: auto;
-  border-radius: 20px;
+  height: auto;   
 }
 
 
@@ -158,12 +159,12 @@ img {vertical-align: middle;}
 
 /* The dots/bullets/indicators */
 .dot {
-  height: 12px;
-  width: 12px; 
-  background-color: #bbb;
+  height: 10px;
+  width: 10px; 
+  background-color: #f2f2f2;
   border-radius: 50%;
   display: inline-block;
-  transition: background-color 0.6s ease;
+  transition: background-color 1s ease;
 }
 
 .active {
@@ -187,16 +188,25 @@ img {vertical-align: middle;}
 
 @media only screen and (max-width: 700px) {
   .thumnail-pic{
-    width: 100%;
+    width: 100%; 
   }
   .thumnail-pic .thumnail-img{
-    width: 100%;
+    width: 90%;    
+  }
+  .thumnail-pic img{
+    width: 100%; 
+    height: auto;   
+    border-radius: 5px;
   }
   .thumnail-inner .miniPoster{
     display: none;
   }
   .thumnail-pic .desc, .thumnail-pic img{
     width: 100%;
+  }
+  .dot { 
+    width: 8px; 
+    height: 8px; 
   }
 }
 
@@ -213,6 +223,7 @@ img {vertical-align: middle;}
 
 .section {
   padding: 0 20px;
+  margin-bottom: 10px;
 }
 
 .rice-varieties {
@@ -229,6 +240,7 @@ div.gallery {
 
 div.gallery:hover {
   border: 1px solid #777;
+  opacity: .9;
 }
 
 div.gallery img {
