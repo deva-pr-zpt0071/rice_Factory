@@ -1,0 +1,311 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  box-sizing: border-box;   
+}
+
+.miniContact {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;  
+    top: 0;
+    z-index: 100;
+    background-color: white;
+  }
+  
+  .miniContact+.main {
+    padding-top: 65px;
+  }
+  
+  .wrap-inner { 
+    /* width: 50%; */ 
+  }
+  
+  .header-info {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+  }
+  
+  #icon {
+    width: 20px;
+    height: auto;
+    line-height: 30px;
+    vertical-align: middle;
+    padding-right: 10px;
+  }
+  
+  .mail {
+    text-align: center;
+  }
+
+  .contact{ 
+    margin-right: -15px;
+  } 
+
+  .hchild{
+    padding-left: 10px;
+  }
+  
+  .hchild a {
+    text-decoration: none;
+    color: rgb(88, 87, 87);
+    line-height: 30px;
+  }
+  
+  .logo {
+    display: block;
+    margin-top: 5px;
+    margin-left: 5px;
+  }
+  
+  .logo img {
+    width: 60px;
+    float: left;
+    height: 60px;
+  }
+  
+  
+  
+  .social-media {
+    /* width: 20%;  */
+  }
+  
+  .sinner {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .schild {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    /* background-color: cyan; */
+    padding-right: 10px;
+  }
+  
+  .slogo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    /* background-color: black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .slogo img {
+    width: 27px;
+    height: auto;
+  }
+  
+  .slogo img:hover, .logo img:hover {
+    opacity: .7;
+    cursor: pointer;
+  }
+  
+  .navicon {
+    display: none;
+    width: 10%;
+    height: auto;
+    position: fixed; 
+    text-align: center;
+    right: 0;
+  }
+  
+  .sidenav {
+    width: 42%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 19px;
+    text-decoration: none;
+    font-size: 19px;
+    color: rgb(88, 87, 87);
+    display: flex;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover, .hchild a:hover{
+    color: #b2b2b2;
+  }
+  
+  .sidenav .closebtn {
+    display: none;
+  }
+  
+  @media screen and (max-width: 1100px) {
+    .miniContact {
+      justify-content: flex-start;
+    }
+
+    .wrap-inner{  
+      width: 30%;
+    }
+  
+    .social-media {
+      width: 30%;    
+    }
+  
+    .navicon {
+      display: block;
+      width: 15%;   
+      top: 15px;
+    }
+  
+    .sidenav {
+      display: block;
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: #111;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 60px;
+    }
+  
+  
+    .sidenav .closebtn {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+    }
+  }
+  
+  
+  
+  /* ---SHOP NOW BUTTON-- */
+  .button {
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 18px;
+    padding: 6px 6px;
+    transition: all 0.5s;
+    cursor: pointer;
+    float: right;
+    margin-left: 10px;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  
+  @media screen and (max-width: 600px) {
+
+    .logo {
+      width: 100%;
+    }
+  
+    .logo-inner {
+      justify-content: flex-start;
+      margin-top: 5px;
+      margin-left: 5px;
+    }
+  
+    .navicon {
+      display: block;
+      width: 15%; 
+    }
+
+    .wrap-inner {
+      width: 60%;    
+      /* background-color: blue; */
+    }  
+  
+    .social-media {
+      width: 40%;
+      /* background-color: red; */
+    }
+  
+    .button {
+      font-size: 15px;
+      padding: 5px 4px;
+      width: 120px;
+      margin-right: 10%;
+    }
+  
+    .topnav button {
+      margin-top: 17px;
+      margin-bottom: 10px;
+    }
+    .hchild{
+      width: 100%;
+    }
+  
+    #icon,
+    .hchild a {
+      line-height: 30px;  
+    }
+  
+    #icon {
+      width: 20px; 
+    }
+  
+    .slogo {
+      width: 30px;
+    }
+  
+    .slogo img {
+      width: 25px;
+      height: auto;
+    }
+  
+    .button {
+      float: left;
+      margin-top: 10px;
+    }
+  
+    .miniContact+.main {
+      padding-top: 130px;
+    } 
+  }
+  
+
+  @media screen and (max-width: 299px) { 
+    .miniContact+.main {
+      padding-top: 170px;
+    }
+  }

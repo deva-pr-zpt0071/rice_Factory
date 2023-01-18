@@ -1,0 +1,3 @@
+https://www.w3schools.com/howto/howto_css_topnav_split.asp --                                       NavBar 
+https://www.w3schools.com/css/tryit.asp?filename=trycss_ex_images_gallery_responsive                responsive images
+https://www.w3schools.com/howto/howto_css_hero_image.asp                                            about us tabs
